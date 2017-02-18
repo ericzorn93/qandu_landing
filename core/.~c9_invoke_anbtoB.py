@@ -13,7 +13,7 @@ class QuestionCreateView(CreateView):
     model = Question
     template_name = "question/question_form.html"
     fields = ['title', 'description']
-    success_url = reverse_lazy('success')
+    success_url = reverse_lazy('home')
     
 class Success(TemplateView):
   template_name = "success.html"
